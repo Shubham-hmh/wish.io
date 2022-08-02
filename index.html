@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Open+Sans:wght@300&display=swap');
+    
+
+    body {
+        /* background-image: url("https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171__480.jpg"); */
+        /* background-image: url('https://cdn5.vectorstock.com/i/1000x1000/63/64/cream-background-vector-3716364.jpg'); */
+        background-image: url('https://media.istockphoto.com/vectors/soft-creamy-background-on-white-vector-illustration-vector-id816253982?k=20&m=816253982&s=612x612&w=0&h=5RoLHgeKmKKePRYW39bLNpLPS6BYd-A7bTIVeEWqziY=');
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 25px;
+        font-family: 'Merriweather', serif;
+        /* background:linear-gradient(90deg,#0162c8,#55e7fc); */
+
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h1 {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box1 {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box2 {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box {
+        padding: 11px;
+        font-family: 'Merriweather', serif;
+        font-weight: bolder;
+        text-shadow: 2px, 2px, 4px, #000;
+        animation: color 5s infinite;
+    }
+
+    @keyframes color {
+        0% {
+            color: purple;
+        }
+
+        10% {
+            color: red;
+        }
+
+        20% {
+            color: skyblue
+        }
+
+        30% {
+            color: yellow
+        }
+
+        40% {
+            color: coral;
+        }
+
+        50% {
+            color: cyan
+        }
+
+        60% {
+            color: deeppink
+        }
+
+        70% {
+            color: blue
+        }
+
+        80% {
+            color: orange
+        }
+
+        90% {
+            color: chocolate
+            
+        }
+   
+
+        100% {
+            color: crimson;
+        }
+
+
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .video {
+        justify-content: center;
+    }
+
+    #btn {
+        border-radius: 34px;
+        font-size: 20px;
+        color: #000;
+        background-color: aqua;
+    }
+
+
+    .grid {
+        display: grid;
+        grid-template-columns: 2, 2;
+        align-content: center;
+        justify-items: start;
+        align-items: center;
+    }
+
+    img {
+        /* width: min-content; */
+        max-width: 100%;
+        height: 500px;
+    }
+    /* .text{
+       font-family: 'Merriweather', serif;;
+        text-transform: uppercase;
+    } */
+</style>
+
+<body>
+    <div class="h1">
+        <h1>Birthday wish </h1>
+
+    </div>
+
+    <div class="container">
+        <div class="box1">
+            <div class="box">H</div>
+            <div class="box">A</div>
+            <div class="box">P</div>
+            <div class="box">P</div>
+            <div class="box">Y</div>
+        </div>
+        <div class="box2">
+            <div class="box">B</div>
+            <div class="box">I</div>
+            <div class="box">R</div>
+            <div class="box">T</div>
+            <div class="box">H</div>
+            <div class="box">D</div>
+            <div class="box">A</div>
+            <div class="box">Y</div>
+        </div>
+
+    </div>
+    <div class="box3">
+        <div class="box">C</div>
+        <div class="box">O</div>
+        <div class="box">O</div>
+        <div class="box">K</div>
+        <div class="box">I</div>
+        <div class="box">E</div>
+    </div>
+    <!-- <div class="text">
+        <p>many many returns of the day cookie , 
+            you 
+        </p>
+    </div> -->
+    <br>
+    <br>
+    <div class="grid">
+
+
+        <div class="slideshow">
+            <img name="slide" width="300px" height="300px" class="center">
+
+        </div>
+
+        <div class="audio">
+            <audio id ='audio' height="200px" width="400px" controls style="width:300px">
+                <source src="song.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+
+
+        <button id="btn" >Click Me </button>
+        <!-- <div id="text">
+
+        </div> -->
+    </div>
+</body>
+<script>
+    var i = 0;
+    var images = [];
+    var time = 2000;
+
+    // image list 
+    images[0] = 'p1.jpg';
+    images[1] = 'p4.jpg';
+    images[2] = '1659176115677.jpg';
+    images[3] = 'IMG-20220205-WA0014.jpg';
+
+    // change slide 
+    function changeImg() {
+        document.slide.src = images[i];
+        if (i < images.length - 1) {
+            i++;
+        }
+        else {
+            i = 0;
+        }
+        setTimeout("changeImg()", time);
+    }
+    window.onload = changeImg;
+
+    let myUrl = document.createElement("img");
+    myUrl.src = "cake.jpg";
+
+    document.getElementById('btn').onclick = function () {
+        // window.location.replace(myUrl);
+        document.body.appendChild(myUrl);
+      //  document.body.style.backgroundImage="url('cake.jpg')";
+     var audio=   document.getElementById('audio');
+    
+    var count=0;   
+ 
+   // audio.play();
+    if(count==0){
+        count=1;
+        audio.play();
+       
+    }
+    else{
+        count=0;
+        audio.pause();
+    }
+    
+
+    }
+ 
+ 
+
+</script>
+
+
+</html>
