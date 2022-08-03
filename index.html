@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
 </head>
 
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Open+Sans:wght@300&display=swap');
-    
+
 
     body {
         /* background-image: url("https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171__480.jpg"); */
@@ -105,9 +107,8 @@
 
         90% {
             color: chocolate
-            
         }
-   
+
 
         100% {
             color: crimson;
@@ -145,6 +146,7 @@
         max-width: 100%;
         height: 500px;
     }
+
     /* .text{
        font-family: 'Merriweather', serif;;
         text-transform: uppercase;
@@ -178,12 +180,12 @@
 
     </div>
     <div class="box3">
-        <div class="box">C</div>
-        <div class="box">O</div>
-        <div class="box">O</div>
+        <div class="box">A</div>
         <div class="box">K</div>
-        <div class="box">I</div>
-        <div class="box">E</div>
+        <div class="box">S</div>
+        <div class="box">H</div>
+        <div class="box">R</div>
+        <div class="box">A</div>
     </div>
     <!-- <div class="text">
         <p>many many returns of the day cookie , 
@@ -201,14 +203,14 @@
         </div>
 
         <div class="audio">
-            <audio id ='audio' height="200px" width="400px" controls style="width:300px">
+            <audio id='audio' height="200px" width="400px" controls style="width:300px">
                 <source src="song.mp3" type="audio/mp3">
             </audio>
         </div>
 
 
 
-        <button id="btn" >Click Me </button>
+        <button id="btn">Click Me </button>
         <!-- <div id="text">
 
         </div> -->
@@ -220,10 +222,10 @@
     var time = 2000;
 
     // image list 
-    images[0] = 'p1.jpg';
-    images[1] = 'p4.jpg';
-    images[2] = '1659176115677.jpg';
-    images[3] = 'IMG-20220205-WA0014.jpg';
+    images[0] = 'https://img.serialgossip.com/2021/12/01/gossip-1638354595.jpg';
+    images[1] = 'https://i.ytimg.com/vi/kn5mibrn31g/maxres2.jpg?sqp=-oaymwEoCIAKENAF8quKqQMcGADwAQH4AZYDgALQBYoCDAgAEAEYfyBBKBMwDw==&rs=AOn4CLAfqKNk79Jh1eak04Apkam-ESMnsg';
+    images[2] = 'https://i.ytimg.com/vi/kcVWdZ50LMo/maxresdefault.jpg';
+    images[3] = 'https://www.iwmbuzz.com/wp-content/uploads/2021/12/yeh-rishta-kya-kehlata-hai-written-update-s66-ep438-2nd-december-2021-akshara-to-help-abhimanyu.jpg';
 
     // change slide 
     function changeImg() {
@@ -239,31 +241,31 @@
     window.onload = changeImg;
 
     let myUrl = document.createElement("img");
-    myUrl.src = "cake.jpg";
+    myUrl.src = "https://cdn.sharechat.com/%E0%A4%AC%E0%A5%8D%E0%A4%AF%E0%A5%82%E0%A4%9F%E0%A5%80%E0%A4%AB%E0%A5%81%E0%A4%B2%E0%A4%95%E0%A5%87%E0%A4%95_a62d4bc_1623383909555_sc_cmprsd_40.jpg";
 
     document.getElementById('btn').onclick = function () {
         // window.location.replace(myUrl);
         document.body.appendChild(myUrl);
-      //  document.body.style.backgroundImage="url('cake.jpg')";
-     var audio=   document.getElementById('audio');
-    
-    var count=0;   
- 
-   // audio.play();
-    if(count==0){
-        count=1;
-        audio.play();
-       
-    }
-    else{
-        count=0;
-        audio.pause();
-    }
-    
+        //  document.body.style.backgroundImage="url('cake.jpg')";
+        var audio = document.getElementById('audio');
+
+        var count = 0;
+
+        // audio.play();
+        if (count == 0) {
+            count = 1;
+            audio.play();
+
+        }
+        else {
+            count = 0;
+            audio.pause();
+        }
+
 
     }
- 
- 
+
+
 
 </script>
 
